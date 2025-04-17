@@ -1,0 +1,64 @@
+/* Карусель */
+.carousel-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  margin: 20px 0;
+}
+
+.carousel-container:hover .carousel-dot {
+    opacity: 1; /* Показываем точки при наведении */
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.7s ease-in-out; /* Увеличили время анимации для плавности */
+    width: 100%;
+}
+
+.carousel-slide {
+  flex: 0 0 100%;
+  min-width: 100%;
+}
+
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  gap: 10px;
+  padding-bottom: 5px;
+}
+
+.carousel-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #ccc;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transition: background-color 0.3s;
+  outline: none;
+  transition: opacity 0.3s ease;
+}
+
+.carousel-dot.active {
+  background-color: #333;
+  outline: none;
+}
+
+.carousel-dot:focus {
+  outline: 2px solid #0066cc;
+  outline-offset: 2px;
+}
+
+@media (max-width: 768px) {
+  .section-content,
+  .section-content.reverse {
+    flex-direction: column;
+  }
+
+  .advantages-grid {
+    grid-template-columns: 1fr;
+  }
+}

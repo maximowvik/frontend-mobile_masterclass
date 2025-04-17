@@ -213,6 +213,10 @@
   background-color: #ff7a4c;
 }
 
+button, input, a{
+  outline: 0px solid transparent;
+}
+
 @media (max-width: 768px) {
   .page {
     padding-top: 50px;

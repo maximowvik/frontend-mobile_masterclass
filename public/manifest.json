@@ -3,7 +3,7 @@
   "name": "ГАПОУ ВО Гусевской стекольный колледж",
   "icons": [
     {
-      "src": "logo.svg",
+      "src": "images/logo.svg",
       "type": "image/svg+xml",
       "sizes": "any"
     },
@@ -13,12 +13,12 @@
       "type": "image/x-icon"
     },
     {
-      "src": "logo192.png",
+      "src": "logo_favicon.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "logo512.png",
+      "src": "logo_favicon.png",
       "type": "image/png",
       "sizes": "512x512"
     }
