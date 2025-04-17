@@ -123,6 +123,10 @@ const AboutPage: React.FC = () => {
             Узнать больше
           </a>
         </div>
+
+        <div className="section">
+          
+        </div>
       </section>
     </div>
   );
