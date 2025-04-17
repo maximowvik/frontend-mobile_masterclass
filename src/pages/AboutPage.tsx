@@ -117,6 +117,10 @@ const AboutPage: React.FC = () => {
           </div>
         </div>
 
+        <div className="section">
+          
+        </div>
+
         <div className="cta-section">
           <h2>Хотите стать частью нашей команды?</h2>
           <a href="https://guscollege.ru/" target="_blank" rel="noopener noreferrer" className="cta-button">
@@ -124,9 +128,7 @@ const AboutPage: React.FC = () => {
           </a>
         </div>
 
-        <div className="section">
-          
-        </div>
+        
       </section>
     </div>
   );

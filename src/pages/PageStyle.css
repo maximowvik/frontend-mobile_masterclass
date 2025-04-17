@@ -4,14 +4,14 @@
   position: absolute;
   bottom: 0;
   left: 0;
-  background-color: #f8f8f8;
+  background-color: #faf3e3;
   overflow-x: hidden;
   overflow: auto;
 }
 
 .hero {
   background-color: #151a20;
-  color: #ffffff;
+  color: #faf3e3;
   text-align: center;
   padding: 4rem 2rem;
   background-image: url(http://62.60.228.119:3589/images/workshop-bg.jpg);
@@ -69,7 +69,7 @@
 
 .section {
   margin-bottom: 4rem;
-  background-color: #ffffff;
+  background-color: #f8f8f8;
   border-radius: 12px;
   box-shadow: 0 4px 20px rgba(21, 26, 32, 0.08);
   padding: 2rem;
