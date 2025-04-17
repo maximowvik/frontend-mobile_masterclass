@@ -1,0 +1,13 @@
+.home-hero {
+    background-image: url(http://62.60.228.119:3589/images/hero-bg.jpg);
+}
+
+.home-hero .cta-button {
+  position: relative;
+  z-index: 2;
+}
+
+.home-content .small-image img{
+    width: 80px;
+    height: 80px;
+}

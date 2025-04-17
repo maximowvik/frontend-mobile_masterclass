@@ -1,0 +1,288 @@
+.page {
+  height: calc(100dvh - 80px);
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #f8f8f8;
+  overflow-x: hidden;
+  overflow: auto;
+}
+
+.hero {
+  background-color: #151a20;
+  color: #ffffff;
+  text-align: center;
+  padding: 4rem 2rem;
+  background-image: url(http://62.60.228.119:3589/images/workshop-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 0;
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+/* Добавляем затемнение для лучшей читаемости текста */
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(21, 26, 32, 0.7);
+  z-index: 1;
+}
+
+.hero h1,
+.hero .subtitle {
+  position: relative;
+  z-index: 2;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+.hero .subtitle {
+  font-size: 1.5rem;
+  opacity: 0.9;
+}
+
+.content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.section {
+  margin-bottom: 4rem;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(21, 26, 32, 0.08);
+  padding: 2rem;
+  transition: transform 0.3s ease;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.section:hover {
+  transform: translateY(-5px);
+}
+
+.section-title {
+  color: #151a20;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.section-content {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 2rem;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.section-content.reverse {
+  flex-direction: row-reverse;
+}
+
+.text-content {
+  flex: 2;
+}
+
+.text-content h2 {
+  color: #151a20;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.text-content p {
+  color: #151a20;
+  line-height: 1.6;
+  font-size: 1.1rem;
+}
+
+.image-content {
+  flex: 1;
+  height: 400px;
+}
+
+.section-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(21, 26, 32, 0.1);
+}
+
+.workshop-section {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+.workshop-section h2 {
+  color: #ec6538;
+  margin-bottom: 1rem;
+}
+
+.workshop-section p {
+  color: #151a20;
+  line-height: 1.6;
+}
+
+.advantages-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.advantage-item {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.advantage-item:hover {
+  transform: translateY(-5px);
+}
+
+.advantage-item h3 {
+  color: #151a20;
+  margin: 1rem 0;
+}
+
+.advantage-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.cta-section {
+  text-align: center;
+  padding: 4rem 2rem;
+  margin-top: 3rem;
+  background-color: #151a20;
+  border-radius: 12px;
+  color: #ffffff;
+}
+
+.cta-section h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  font-weight: 600;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background-color: #ec6538;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #ff7a4c;
+}
+
+@media (max-width: 768px) {
+  .page {
+    padding-top: 50px;
+  }
+
+  .hero {
+    margin-top: 0;
+    padding: 2rem 1rem;
+    height: 60vh; /* Меньшая высота для мобильных устройств */
+  }
+
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero .subtitle {
+    font-size: 1.2rem;
+  }
+
+  .section {
+    padding: 1rem;
+  }
+
+  .section-content {
+    flex-direction: column;
+  }
+
+  .section-content.reverse {
+    flex-direction: column;
+  }
+
+  .image-content {
+    height: 300px;
+    width: 100%;
+  }
+
+  .text-content {
+    padding: 1rem 0;
+  }
+
+  .section-title {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .text-content h2 {
+    font-size: 1.8rem;
+  }
+
+  .advantages-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .content {
+    padding: 20px;
+  }
+
+  .cta-section {
+    padding: 3rem 1rem;
+    margin-top: 2rem;
+  }
+
+  .cta-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .cta-button {
+    padding: 0.875rem 1.75rem;
+    width: max-content;
+    text-align: center;
+  }
+} 

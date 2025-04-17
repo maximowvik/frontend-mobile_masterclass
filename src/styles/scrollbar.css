@@ -1,0 +1,36 @@
+/* Стилизация скроллбара для всей страницы */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #151a20;
+  border-radius: 0;
+  margin: 10px 0;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ffffff;
+  border-radius: 20px;
+  border: 3px solid #151a20;
+  transition: all 0.3s ease;
+}
+
+::-webkit-scrollbar-corner {
+    background: #151a20;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #151a20;
+}
+
+/* Убираем кнопки скроллбара */
+::-webkit-scrollbar-button {
+  display: none;
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #ffffff #151a20;
+} 
