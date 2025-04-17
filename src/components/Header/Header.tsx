@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import './Header.css';
 import logo from '../../assets/logo.svg';
@@ -28,7 +28,9 @@ const Header: React.FC = () => {
       <div className="header-container">
         <div className="logo">
           <img src={logo} alt="Логотип колледжа" className="logo-image" />
-          <Link to="/" onClick={() => setIsMenuOpen(false)}><h1>ГАПОУ ВО "Гусевской<br></br> стекольный колледж"</h1></Link>
+          <Link to="/" onClick={() => setIsMenuOpen(false)}>
+            <h1>ГАПОУ ВО "Гусевской<br /> стекольный колледж"</h1>
+          </Link>
         </div>
         <button 
           className={`burger-menu ${isMenuOpen ? 'active' : ''}`}

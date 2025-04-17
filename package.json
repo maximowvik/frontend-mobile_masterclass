@@ -2,7 +2,7 @@
   "name": "frontend-mobile",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://maximowvik.github.io/frontend-mobile_masterclass",
+  "homepage": "https://maximowvik.github.io/",
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
