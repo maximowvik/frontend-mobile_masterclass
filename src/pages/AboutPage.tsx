@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useCallback, useEffect, useRef, useState } from 'react';
 import './PageStyle.css';
 import './AboutPage.css';
 
@@ -68,18 +68,18 @@ const AboutPage: React.FC = () => {
     resetAutoPlay(); // Сбрасываем авто-прокрутку при ручном переключении
   };
 
-  const goToNextSlide = (): void => {
+  const goToNextSlide = useCallback((): void => {
     setCurrentSlide(prev => (prev + 1) % slides.length);
-  };
+  }, [slides.length]); // Зависит только от длины slides
 
-  const resetAutoPlay = (): void => {
+  const resetAutoPlay = useCallback((): void => {
     if (autoPlayRef.current) {
       clearInterval(autoPlayRef.current);
     }
     if (isAutoPlaying) {
       autoPlayRef.current = setInterval(goToNextSlide, intervalDuration);
     }
-  };
+  }, [isAutoPlaying, goToNextSlide]);
 
   useEffect(() => {
     if (isAutoPlaying) {
@@ -90,7 +90,7 @@ const AboutPage: React.FC = () => {
         clearInterval(autoPlayRef.current);
       }
     };
-  }, [isAutoPlaying, slides.length]);
+  }, [isAutoPlaying, goToNextSlide]); // Теперь эффект зависит от актуальной функции
 
   // Останавливаем авто-прокрутку при наведении
   const handleMouseEnter = (): void => {

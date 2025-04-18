@@ -2,13 +2,7 @@ import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import './Header.css';
 import logo from '../../assets/logo.svg';
-import {
-  Calendar3, 
-  Cash, 
-  Clock, 
-  Box, 
-  InfoCircle 
-} from 'react-bootstrap-icons';
+
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -49,7 +43,6 @@ const Header: React.FC = () => {
                 className={`masterclass_button ${isActive('/masterclasses') ? 'active' : ''}`} 
                 onClick={() => setIsMenuOpen(false)}
               >
-                <Calendar3 className="menu-icon" />
                 Мастер классы
               </Link>
             </li>
@@ -59,7 +52,6 @@ const Header: React.FC = () => {
                 className={`plans_button ${isActive('/plans') ? 'active' : ''}`} 
                 onClick={() => setIsMenuOpen(false)}
               >
-                <Cash className="menu-icon" />
                 Тарифы
               </Link>
             </li>
@@ -69,7 +61,6 @@ const Header: React.FC = () => {
                 className={`schedule_button ${isActive('/schedule') ? 'active' : ''}`} 
                 onClick={() => setIsMenuOpen(false)}
               >
-                <Clock className="menu-icon" />
                 Расписание
               </Link>
             </li>
@@ -79,7 +70,6 @@ const Header: React.FC = () => {
                 className={`products_button ${isActive('/products') ? 'active' : ''}`} 
                 onClick={() => setIsMenuOpen(false)}
               >
-                <Box className="menu-icon" />
                 Продукция
               </Link>
             </li>
@@ -89,7 +79,6 @@ const Header: React.FC = () => {
                 className={`about_button ${isActive('/about') ? 'active' : ''}`} 
                 onClick={() => setIsMenuOpen(false)}
               >
-                <InfoCircle className="menu-icon" />
                 О нас
               </Link>
             </li>
