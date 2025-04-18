@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/frontend-mobile_masterclass/static/css/main.a8dfd3b7.css",
+    "main.js": "/frontend-mobile_masterclass/static/js/main.e035b797.js",
+    "static/js/453.ebc83dca.chunk.js": "/frontend-mobile_masterclass/static/js/453.ebc83dca.chunk.js",
+    "static/media/logo.svg": "/frontend-mobile_masterclass/static/media/logo.31a223f3256b29214f81a26ebb1b0cf8.svg",
+    "index.html": "/frontend-mobile_masterclass/index.html",
+    "main.a8dfd3b7.css.map": "/frontend-mobile_masterclass/static/css/main.a8dfd3b7.css.map",
+    "main.e035b797.js.map": "/frontend-mobile_masterclass/static/js/main.e035b797.js.map",
+    "453.ebc83dca.chunk.js.map": "/frontend-mobile_masterclass/static/js/453.ebc83dca.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a8dfd3b7.css",
+    "static/js/main.e035b797.js"
+  ]
+}
