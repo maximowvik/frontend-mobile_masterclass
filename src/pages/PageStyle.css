@@ -1,3 +1,27 @@
+body {
+    background-color: #F2EFE9;
+    color: #1C1C1C;
+    font-family: 'Inter', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #73848C;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+a {
+    color: #CAB9A5;
+}
+
+button, .button {
+    color: #CAB9A5;
+    font-family: 'Italianno', cursive;
+}
+
+hr {
+    border-color: #A3B6C1;
+}
+
 .page {
   height: calc(100dvh - 80px);
   width: 100%;
@@ -30,7 +54,6 @@
   z-index: 1;
 }
 
-/* Добавляем затемнение для лучшей читаемости текста */
 .hero::before {
   content: '';
   position: absolute;
@@ -128,7 +151,7 @@
   height: 100%;
   object-fit: cover;
   border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(21, 26, 32, 0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .workshop-section {
@@ -289,4 +312,4 @@ button, input, a{
     width: max-content;
     text-align: center;
   }
-} 
+}
