@@ -28,7 +28,7 @@ hr {
   position: absolute;
   bottom: 0;
   left: 0;
-  background-color: #faf3e3;
+  background-color: #f2efe9;
   overflow-x: hidden;
   overflow: auto;
 }
@@ -92,18 +92,18 @@ hr {
 
 .section {
   margin-bottom: 4rem;
-  background-color: #f8f8f8;
+  /* background-color: #f8f8f8; */
   border-radius: 12px;
-  box-shadow: 0 4px 20px rgba(21, 26, 32, 0.08);
+  /* box-shadow: 0 4px 20px rgba(21, 26, 32, 0.08); */
   padding: 2rem;
-  transition: transform 0.3s ease;
+  /* transition: transform 0.3s ease; */
   box-sizing: border-box;
   width: 100%;
 }
 
-.section:hover {
+/* .section:hover {
   transform: translateY(-5px);
-}
+} */
 
 .section-title {
   color: #151a20;
@@ -155,7 +155,7 @@ hr {
 }
 
 .workshop-section {
-  background-color: #ffffff;
+  background-color: #f8f8f8;
   padding: 2rem;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -224,16 +224,18 @@ hr {
 .cta-button {
   display: inline-block;
   padding: 1rem 2rem;
-  background-color: #ec6538;
-  color: #ffffff;
+  background-color: #f2efe9;
+  color: #cab9a5;
   text-decoration: none;
-  border-radius: 8px;
+  border-radius: 30px;
+  border: 1px solid #cab9a5;
   font-weight: 500;
   transition: background-color 0.3s ease;
 }
 
 .cta-button:hover {
-  background-color: #ff7a4c;
+  background-color: #cab9a5;
+  color: #f2efe9;
 }
 
 button, input, a{

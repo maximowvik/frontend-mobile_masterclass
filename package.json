@@ -2,7 +2,7 @@
   "name": "frontend-mobile",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://maximowvik.github.io/",
+  "homepage": "https://maximowvik.github.io/frontend-mobile_masterclass",
   "dependencies": {
     "react": "^19.1.0",
     "react-app-polyfill": "^3.0.0",
